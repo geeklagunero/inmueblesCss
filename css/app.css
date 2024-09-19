@@ -1,9 +1,12 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /*  1rem = 10px */
+    font-size: 62.5%;
+    /*  1rem = 10px */
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -17,7 +20,11 @@ body {
 
 /* Globales */
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Playfair Display", serif;
     margin: 0 0 5rem 0;
 }
@@ -28,10 +35,10 @@ h1 {
 
 h2 {
     font-size: 4rem;
-    
+
 }
 
-h3{
+h3 {
     font-size: 3rem;
 }
 
@@ -60,10 +67,12 @@ img {
     padding: 1rem;
     transition: background-color .3s ease-out;
     text-align: center;
+    border: none;
 }
 
 .btn:hover {
     background-color: #769c02;
+    cursor: pointer;
 
 }
 
@@ -83,7 +92,7 @@ img {
 .nombre-sitio {
     margin-top: 5rem;
     text-align: center;
-    
+
 }
 
 .nombre-sitio span {
@@ -99,7 +108,7 @@ img {
     padding: 2rem 0;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .hero {
@@ -137,7 +146,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    
+
 
 }
 
@@ -156,10 +165,11 @@ img {
     column-gap: 8rem;
 
 }
+
 .texto-nosotros {
     grid-column: 2 / 3;
     color: #fff;
-    
+
 }
 
 /* Listado de productos */
@@ -176,6 +186,7 @@ img {
     color: #FFF;
     padding: 2rem;
 }
+
 .texto-producto h3 {
     margin: 0;
 }
@@ -212,7 +223,7 @@ img {
     row-gap: 2rem;
 }
 
-.producto:nth-child(1){
+.producto:nth-child(1) {
     grid-column: 1 / 7;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -225,8 +236,7 @@ img {
 }
 
 
-.producto:nth-child(2)
-{
+.producto:nth-child(2) {
     grid-column: 1 / 4;
 }
 
@@ -236,7 +246,7 @@ img {
     object-fit: cover;
 }
 
-.producto:nth-child(3){
+.producto:nth-child(3) {
     grid-column: 4 / 7;
 }
 
@@ -246,22 +256,22 @@ img {
     object-fit: cover;
 }
 
-.producto:nth-child(4){
+.producto:nth-child(4) {
     grid-column: 1 / 3;
 }
 
-.producto:nth-child(5){
+.producto:nth-child(5) {
     grid-column: 3 / 5;
 }
 
-.producto:nth-child(6){
+.producto:nth-child(6) {
     grid-column: 5 / 7;
 }
 
 /* footer */
 
 .footer {
-    
+
     margin-top: 10rem;
     padding: 5rem;
     border-top: 1px solid #E1E1E1;
@@ -351,4 +361,45 @@ img {
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+/* Fornulario */
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #037bc0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+textarea,
+select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+
 }
